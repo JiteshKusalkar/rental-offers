@@ -4,10 +4,11 @@ import {
   decrement,
   increment,
   incrementByAmount,
-  incrementAsync,
+  // fetchOffersAsync,
   incrementIfOdd,
   selectCount,
-} from './counterSlice';
+} from '../../redux/slices/counter/slice';
+import { fetchOffersAsync } from '../../redux/thunk/fetchOffersAsync';
 import styles from './Counter.module.css';
 
 export function Counter() {
@@ -51,7 +52,7 @@ export function Counter() {
         </button>
         <button
           className={styles.asyncButton}
-          onClick={() => dispatch(incrementAsync(incrementValue))}
+          onClick={() => dispatch(fetchOffersAsync(incrementValue))}
         >
           Add Async
         </button>
