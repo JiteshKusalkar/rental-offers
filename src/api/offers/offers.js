@@ -1,5 +1,5 @@
 function fetchOffers() {
-  return fetch('https://cdn.sixt.io/codingtask/offers.json', {
+  return fetch(process.env.REACT_APP_OFFERS_URL, {
     method: 'GET',
     mode: 'cors',
     credentials: 'omit',
