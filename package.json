@@ -41,12 +41,14 @@
     "~api": "src/api",
     "~data": "src/data",
     "~jest": "src/jest",
+    "~mocks": "src/mocks",
     "~thunk": "src/redux/thunk",
     "~slices": "src/redux/slices",
     "~components": "src/components"
   },
   "devDependencies": {
     "link-module-alias": "^1.2.0",
+    "msw": "^0.35.0",
     "redux-mock-store": "^1.5.4"
   }
 }

@@ -1,4 +1,4 @@
-import useOffers from '~api/offers/useOffers';
+import { useOffers } from '~api/offers';
 import PageError from '~components/PageError';
 import { PageLoader } from '~components/Loader';
 import Offer from '../../components/Offer';

@@ -35,7 +35,7 @@ describe('Offer', () => {
     );
   });
 
-  it('should render without car image alt as unknown car', () => {
+  it('should render with car image alt as unknown car', () => {
     const offer = {
       ...data.offers[0],
       carGroupInfo: { ...data.offers[0].carGroupInfo, modelExample: {} },
