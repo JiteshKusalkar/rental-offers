@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageError should render the component 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL tuHyk"
+  >
+    <p
+      class="sc-gsDKAQ gIbonr"
+    >
+      404
+    </p>
+    <span
+      class="sc-dkPtRN"
+    >
+      Page could not be loaded
+    </span>
+  </div>
+</div>
+`;

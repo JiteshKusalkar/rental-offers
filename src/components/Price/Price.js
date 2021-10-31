@@ -1,4 +1,4 @@
-function Price({ locale = 'en-US', currency, amount = 0 }) {
+function Price({ locale = 'en-EU', currency, amount = 0 }) {
   const value = new Intl.NumberFormat(locale, { style: 'currency', currency }).format(amount);
 
   return <>{value}</>;

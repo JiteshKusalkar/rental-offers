@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render the component with default props 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL eaXtxm"
+  >
+    <img
+      alt="Image"
+      class="sc-dkPtRN"
+      height="250"
+      src="http://imageSrc"
+      width="350"
+    />
+    <div
+      class="sc-gsDKAQ"
+    >
+      Card content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card should render the component with valid props 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL eaXtxm"
+  >
+    <img
+      alt="Image"
+      class="sc-dkPtRN"
+      height="300"
+      src="http://imageSrc"
+      width="300"
+    />
+    <div
+      class="sc-gsDKAQ"
+    >
+      Card content
+    </div>
+  </div>
+</div>
+`;

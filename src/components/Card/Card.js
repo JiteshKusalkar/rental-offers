@@ -4,8 +4,8 @@ import { Body, Img, Wrapper } from './styles';
 function Card({
   imageSrc,
   imageAlt,
-  imageWidth,
-  imageHeight,
+  imageWidth = 350,
+  imageHeight = 250,
   children,
   className,
 }) {
@@ -14,8 +14,8 @@ function Card({
       <Img
         src={imageSrc}
         alt={imageAlt}
-        width={imageWidth ?? 350}
-        height={imageHeight ?? 250}
+        width={imageWidth}
+        height={imageHeight}
       />
       <Body>{children}</Body>
     </Wrapper>
@@ -26,8 +26,8 @@ Card.propTypes = {
   children: PropTypes.node.isRequired,
   imageSrc: PropTypes.string,
   imageAlt: PropTypes.string,
-  imageWidth: PropTypes.string,
-  imageHeight: PropTypes.string,
+  imageWidth: PropTypes.number,
+  imageHeight: PropTypes.number,
   className: PropTypes.string,
 };
 

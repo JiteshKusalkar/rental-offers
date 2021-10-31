@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLoader should render the component 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL ibNRhI"
+  >
+    <div
+      class="sc-gsDKAQ fdzcKP"
+    />
+    Card content
+  </div>
+</div>
+`;

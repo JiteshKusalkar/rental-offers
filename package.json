@@ -39,6 +39,7 @@
   },
   "_moduleAliases": {
     "~api": "src/api",
+    "~data": "src/data",
     "~jest": "src/jest",
     "~thunk": "src/redux/thunk",
     "~slices": "src/redux/slices",
