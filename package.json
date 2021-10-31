@@ -18,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "link-module-alias",
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +36,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "_moduleAliases": {
+    "~api": "src/api",
+    "~jest": "src/jest",
+    "~thunk": "src/redux/thunk",
+    "~slices": "src/redux/slices",
+    "~components": "src/components"
+  },
+  "devDependencies": {
+    "link-module-alias": "^1.2.0",
+    "redux-mock-store": "^1.5.4"
   }
 }

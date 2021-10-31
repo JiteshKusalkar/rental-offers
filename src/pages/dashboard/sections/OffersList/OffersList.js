@@ -1,7 +1,7 @@
-import useOffers from '../../../../api/offers/useOffers';
-import PageError from '../../../../components/PageError';
-import { PageLoader } from '../../../../components/Loader';
-import Offer from '../../components/Offer';
+import useOffers from '~api/offers/useOffers';
+import PageError from '~components/PageError';
+import { PageLoader } from '~components/Loader';
+import Offer from '~components/Offer';
 import { Header, List, Wrapper } from './styles';
 
 function OffersList() {

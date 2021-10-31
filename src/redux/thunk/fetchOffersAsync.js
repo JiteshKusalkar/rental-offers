@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { fetchOffers } from '../../api/offers';
+import { fetchOffers } from '~api/offers';
 
 // The function below is called a thunk and allows us to perform async logic. It
 // can be dispatched like a regular action: `dispatch(fetchOffersAsync())`. This

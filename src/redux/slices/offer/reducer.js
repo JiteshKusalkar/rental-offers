@@ -1,4 +1,4 @@
-import { fetchOffersAsync } from '../../thunk/fetchOffersAsync';
+import { fetchOffersAsync } from '~thunk/fetchOffersAsync';
 import data from '../../../data/offers.json';
 
 export function caseReducer(builder) {

@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectOffers, selectOffersError, selectOffersStatus } from '../../redux/slices/offer';
-import { fetchOffersAsync } from '../../redux/thunk/fetchOffersAsync';
+import { selectOffers, selectOffersError, selectOffersStatus } from '~slices/offer';
+import { fetchOffersAsync } from '~thunk/fetchOffersAsync';
 
 function useOffers() {
   const dispatch = useDispatch();
