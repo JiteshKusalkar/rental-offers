@@ -1,4 +1,5 @@
 import { fetchOffersAsync } from '../../thunk/fetchOffersAsync';
+import data from '../../../data/offers.json';
 
 export function caseReducer(builder) {
   builder
@@ -7,7 +8,12 @@ export function caseReducer(builder) {
     })
     .addCase(fetchOffersAsync.fulfilled, (state, action) => {
       state.status = 'idle';
-      state.value += action.payload;
+      if (action.payload) {
+        state.value = action.payload;
+      } else {
+        // when API stops sending data
+        state.value = data.offers;
+      }
     })
     .addCase(fetchOffersAsync.rejected, (state, action) => {
       state.status = 'idle';

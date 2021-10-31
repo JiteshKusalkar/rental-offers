@@ -1,8 +1,8 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import counterReducer from './slices/counter/slice';
+import { offersReducer } from './slices/offer';
 
 export const store = configureStore({
   reducer: combineReducers({
-    counter: counterReducer,
+    offers: offersReducer,
   }),
 });

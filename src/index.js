@@ -6,9 +6,12 @@ import App from './App';
 import { store } from './redux/store';
 import * as serviceWorker from './serviceWorker';
 
+import GlobalStyle from './global.styles';
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
+      <GlobalStyle />
       <App />
     </Provider>
   </React.StrictMode>,
