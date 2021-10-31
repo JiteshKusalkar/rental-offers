@@ -1,5 +1,29 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+## About the app
+
+Displays a list of offers fetched from a provided URL.
+
+### Prerequisite
+- **node**: 12.20.2
+- **yarn**: 1.22.10
+
+### Env
+Create an `.env.local` file in the root directory with the following variable -
+```
+REACT_APP_OFFERS_URL=https://cdn.sixt.io/codingtask/offers.json
+```
+
+### Libraries
+- `redux` & `react-redux`: as a state management library
+- `axios`: for consuming APIs
+- `link-module-alias`: for module aliases using `fs.symlink`
+- `redux-mock-store`: for mocking redux store in test files
+- `msw`: for mocking API server to test API calls
+- `styled-components`: for styling
+
+Use the below `Available Scripts` to run, build and run the unit test in the app.
+
 ## Available Scripts
 
 In the project directory, you can run:
